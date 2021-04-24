@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("test")
-public class TesTController {
+public class TestController {
 
     /**
      * 将对象以json的格式返回给客户端
      * 但是用了@RestController注解后@ResponseBody就不需要了：@RestController=@Controller+@ResponseBody
      * @return
      */
-    // @ResponseBody
+
     @RequestMapping("hello")
     public PersonDto hello(){
         PersonDto personDto = new PersonDto();
